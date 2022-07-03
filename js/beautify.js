@@ -25,11 +25,11 @@
         requestAnimationFrame(animate);
     }
     function window_resize() {
-        //canvas铺满窗口
+        // canvas铺满窗口
         width = window.innerWidth;
         height = window.innerHeight;
 
-        // //如果需要铺满内容可以换下面这个
+        // 如果需要铺满内容可以换下面这个
         // var panel = document.getElementById('header_canvas');
         // width=panel.offsetWidth;
         // height=panel.offsetHeight;
@@ -49,7 +49,7 @@
         function init() {
             _this.pos.x = Math.random() * width;
             _this.pos.y = height + Math.random() * 100;
-            _this.alpha = 0.1 + Math.random() * 0.5;//气泡透明度
+            _this.alpha = 0.2 + Math.random() * 0.5;//气泡透明度
             _this.alpha_change = 0.0002 + Math.random() * 0.0005;//气泡透明度变化速度
             _this.scale = 0.2 + Math.random() * 0.1;//气泡大小
             _this.scale_change = Math.random() * 0.0001;//气泡大小变化速度
